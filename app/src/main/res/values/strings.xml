@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">eCommerce</string>
+    <string name="skip">Skip</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="new_user">New User? </string>
+    <string name="signup_here">SignUp Here</string>
+    <string name="or">OR</string>
+    <string name="already_member">Already Member?</string>
+    <string name="signin_here">SignIn Here</string>
+    <string name="submit">Submit</string>
+    <string name="full_name">Full Name</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="ok">OK</string>
+
+    <string name="is_invalid">Is Invalid</string>
+    <string name="password_not_match">Password does not match</string>
+    <string name="network_not_connected">There is no network connection now. Please try again. </string>
+
+    <string name="failed_request">Please try again...</string>
+    <string name="otp_sent">OTP send to your registered mobile number...</string>
+    <string name="otp">OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="otp_not_matches">OTP does not match</string>
+    <string name="create_new_password">Create New Password</string>
+
+
+    <string name="home">Home</string>
+    <string name="new_product">New Product</string>
+    <string name="logout">Logout</string>
+    <string name="my_account">My Account</string>
+
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="best_selling">Best Selling</string>
+    <string name="trending">Trending</string>
+    <string name="conditional">Conditional</string>
+</resources>

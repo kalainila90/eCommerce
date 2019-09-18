@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/padding_small_5"
+    app:cardCornerRadius="@dimen/padding_small_5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small_5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small_5"
+                android:text="Samsung Mobile"
+                android:textStyle="bold"
+                android:layout_toLeftOf="@+id/img_more"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/padding_medium_10"
+                android:layout_marginLeft="@dimen/padding_medium_10"
+                android:layout_marginRight="@dimen/padding_small_5"/>
+            <ImageView
+                android:id="@+id/img_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:src="@mipmap/baseline_more_vert_black_18"
+                android:padding="@dimen/padding_small_5"
+                android:layout_marginTop="@dimen/padding_medium_10"
+                android:layout_marginRight="@dimen/padding_medium_10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 Rs"
+                android:textSize="@dimen/txt_medium_10"
+                android:id="@+id/old_price"
+                android:background="@drawable/strict_line"
+                android:layout_alignParentRight="true"
+                android:layout_above="@+id/layout_2"
+                android:layout_marginRight="@dimen/padding_medium_10"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:layout_marginBottom="@dimen/padding_small_5"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_2"
+    android:layout_alignParentBottom="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300 Rs"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/txt_large_12"
+        android:textColor="@color/dark_gold"
+        android:layout_marginRight="@dimen/padding_medium_10"
+        android:layout_marginTop="@dimen/padding_small_5"/>
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="3.5"
+        android:isIndicator="false"
+        style="@style/ratingBarSmall"
+       />
+
+</RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
