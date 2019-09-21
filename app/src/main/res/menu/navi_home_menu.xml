@@ -18,10 +18,17 @@
             android:title="@string/my_account"
             android:icon="@mipmap/ic_launcher"/>
 
+
+
     </group>
 
     <group android:id="@+id/grp2"
         android:checkableBehavior="single">
+
+
+        <item android:id="@+id/navi_wishlist"
+            android:title="@string/wishlist"
+            android:icon="@mipmap/ic_launcher"/>
         <item android:id="@+id/navi_logout"
             android:title="@string/logout"
             android:icon="@mipmap/ic_launcher"/>

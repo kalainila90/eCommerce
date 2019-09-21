@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/card"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:elevation="@dimen/padding_small_5"
     app:cardCornerRadius="@dimen/padding_small_5">
@@ -10,6 +12,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <ImageView
+            android:id="@+id/prod_img"
             android:layout_width="match_parent"
             android:layout_height="110dp"
             android:padding="@dimen/padding_small_5"
@@ -21,6 +24,7 @@
             android:layout_height="1dp"
             android:background="@color/grey_light"/>
         <TextView
+            android:id="@+id/product_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="first product"

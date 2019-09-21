@@ -33,9 +33,30 @@
     <string name="new_product">New Product</string>
     <string name="logout">Logout</string>
     <string name="my_account">My Account</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 
     <string name="new_arrivals">New Arrivals</string>
     <string name="best_selling">Best Selling</string>
     <string name="trending">Trending</string>
     <string name="conditional">Conditional</string>
+    <string name="related">Related products</string>
+
+    <string name="overview">Overview</string>
+    <string name="review">Review</string>
+    <string name="details">Details</string>
+    <string name="write_a_review">Write a review</string>
+    <string name="your_rating">Your Rating</string>
+    <string name="review_summary">Summary</string>
+
+    <string name="in_stock">In Stock</string>
+    <string name="out_stock">Out of Stock</string>
+    <string name="postedby">Posted By </string>
+
+    <string name="search">Search</string>
+    <string name="cart">Cart</string>
+    <string name="search_name">Search Name</string>
+
+    <string name="qty">Qty.</string>
 </resources>

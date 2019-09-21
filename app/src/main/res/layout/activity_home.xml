@@ -19,6 +19,7 @@
 
             <android.support.v7.widget.Toolbar
                 android:layout_width="match_parent"
+                android:id="@+id/toolBar"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/colorAccent"
                 app:popupTheme="@style/AppTheme.PopupOverlay">
@@ -50,7 +51,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="200dp"
             android:orientation="vertical"
             android:layout_marginTop="@dimen/padding_small_5">
             <TextView
@@ -76,7 +77,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="200dp"
             android:orientation="vertical"
             android:layout_marginTop="@dimen/padding_small_5">
             <TextView
@@ -102,7 +103,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="200dp"
             android:orientation="vertical"
             android:layout_marginTop="@dimen/padding_small_5">
             <TextView
@@ -127,7 +128,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="200dp"
             android:orientation="vertical"
             android:layout_marginTop="@dimen/padding_small_5">
             <TextView
@@ -171,7 +172,8 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         android:layout_gravity="start"
-        android:visibility="gone"
+        android:visibility="visible"
+        android:id="@+id/navi_view"
         app:headerLayout="@layout/navi_header_layout"
         app:menu="@menu/navi_home_menu">
 

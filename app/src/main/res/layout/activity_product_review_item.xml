@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding_small_5"
+    android:paddingTop="@dimen/padding_small_5">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_title"
+        android:textStyle="bold"
+        android:textSize="@dimen/padding_large_15"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"/>
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:id="@+id/review_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/review_title"
+        android:layout_marginLeft="@dimen/padding_medium_10"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="3.5"
+        android:isIndicator="false"
+        style="@style/ratingBarSmall"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_descrip"
+        android:textStyle="normal"
+
+        android:textSize="@dimen/padding_large_15"
+
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="@dimen/padding_small_5"
+        android:paddingBottom="@dimen/padding_small_5"
+        android:layout_below="@+id/review_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/postedby"
+        android:textStyle="normal"
+        android:text="@string/postedby"
+        android:layout_below="@+id/review_descrip"
+        android:textSize="@dimen/padding_large_15"
+        android:textColor="@color/black"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_user"
+        android:textStyle="normal"
+
+        android:layout_toRightOf="@+id/postedby"
+        android:layout_below="@+id/review_descrip"
+        android:textSize="@dimen/padding_large_15"
+        android:textColor="@color/green_light"
+        android:layout_marginLeft="@dimen/padding_small_5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_date"
+        android:textStyle="normal"
+
+        android:layout_below="@+id/review_descrip"
+        android:textSize="@dimen/padding_large_15"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/review_user"
+        android:layout_marginLeft="@dimen/padding_small_5"/>
+</RelativeLayout>

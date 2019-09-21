@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/padding_small_5"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tab_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small_5"
+        android:text="@string/write_a_review"
+        android:textStyle="bold"
+        android:textSize="@dimen/padding_large_15"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/padding_medium_10"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_userreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/your_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small_5"
+            android:text="@string/your_rating"
+            android:textStyle="bold"
+            android:textSize="@dimen/padding_large_15"
+            android:textColor="@color/black" />
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/prod_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="3.5"
+            android:isIndicator="true"
+            style="@style/ratingBarSmall"
+            android:layout_marginTop="@dimen/padding_small_5"
+            android:layout_marginLeft="@dimen/padding_medium_10"
+            android:layout_toRightOf="@+id/your_rating"
+            />
+
+        <EditText
+            android:id="@+id/review_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/your_rating"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:layout_marginRight="@dimen/padding_xxlarge_30"
+            android:layout_marginLeft="@dimen/padding_xxlarge_30"
+            android:layout_marginTop="@dimen/padding_xlarge_20"
+            android:hint="@string/review_summary"/>
+        <EditText
+            android:id="@+id/review_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review_summary"
+
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:layout_marginRight="@dimen/padding_xxlarge_30"
+            android:layout_marginLeft="@dimen/padding_xxlarge_30"
+            android:layout_marginTop="@dimen/padding_xlarge_20"
+            android:hint="@string/review"/>
+
+        <TextView
+            android:id="@+id/submit_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review_details"
+            android:text="@string/submit"
+            android:background="@drawable/rounded_login"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/padding_xxlarge_30"
+            android:layout_marginLeft="@dimen/padding_xxlarge_30"
+            android:layout_marginTop="@dimen/padding_xlarge_20"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

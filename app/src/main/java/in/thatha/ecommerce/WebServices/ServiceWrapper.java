@@ -8,7 +8,9 @@ import java.util.concurrent.TimeUnit;
 import in.thatha.ecommerce.BuildConfig;
 import in.thatha.ecommerce.beanResponse.ForgotPassword;
 import in.thatha.ecommerce.beanResponse.NewPassword;
+import in.thatha.ecommerce.beanResponse.NewProductResponse;
 import in.thatha.ecommerce.beanResponse.NewUserRegistration;
+import in.thatha.ecommerce.beanResponse.ProductDetailsResponse;
 import in.thatha.ecommerce.beanResponse.UserSignin;
 import in.thatha.ecommerce.utility.Constant;
 import okhttp3.Interceptor;
@@ -71,6 +73,32 @@ public class ServiceWrapper   {
 public Call<NewPassword> newPasswordCall(String userid, String password){
     return mServiceInterface.newPasswordCall(convertPlainString(userid),convertPlainString(password));
 }
+
+// new product details call
+public Call<NewProductResponse> newProdResCall(String securecode){
+    return mServiceInterface.newProductResCall(convertPlainString(securecode));
+}
+
+    // best selling details call
+    public Call<NewProductResponse> bestSellResCall(String securecode){
+        return mServiceInterface.bestSellResCall(convertPlainString(securecode));
+    }
+
+    // trending productsdetails call
+    public Call<NewProductResponse> trendingResCall(String securecode){
+        return mServiceInterface.trendingResCall(convertPlainString(securecode));
+    }
+
+
+    // best selling details call
+    public Call<NewProductResponse> conditionalResCall(String securecode){
+        return mServiceInterface.conditionalResCall(convertPlainString(securecode));
+    }
+
+    //product details call
+    public Call<ProductDetailsResponse> prodDetailCall(String securecode,String prod_id){
+        return mServiceInterface.prodDetailCall(convertPlainString(securecode),convertPlainString(prod_id));
+    }
 
     //convert above parameters into plain text
     public RequestBody convertPlainString(String data){

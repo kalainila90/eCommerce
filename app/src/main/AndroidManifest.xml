@@ -24,6 +24,7 @@
         <activity android:name=".login.ForgotPasswordActivity"/>
         <activity android:name=".login.OTP_verification"/>
         <activity android:name=".login.NewPasswordActivity"/>
+        <activity android:name=".productpreview.ProductDetailsActivity"/>
 
 
     </application>
